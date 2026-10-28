@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+  link(rel="stylesheet", href="/css/style.css")
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Add a New Plant
+    a(href="/") Return to the homepage
+    
+    form(action="/update-cobj", method="POST")
+      div
+        label(for="name") Name:
+        input(type="text", id="name", name="name", required)
+      div
+        label(for="species") Species:
+        input(type="text", id="species", name="species")
+      div
+        label(for="sunlight") Sunlight:
+        input(type="text", id="sunlight", name="sunlight")
+      button(type="submit") Submit

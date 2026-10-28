@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Plants List
+    a(href="/update-cobj") Add to this table
+    
+    table
+      thead
+        tr
+          th Name
+          th Species
+          th Sunlight
+      tbody
+        each plant in plants
+          tr
+            td= plant.properties.name
+            td= plant.properties.species
+            td= plant.properties.sunlight

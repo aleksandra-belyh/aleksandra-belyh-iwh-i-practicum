@@ -1,58 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #333;
 }
 
 h1 {
-    margin: 1rem;
+    color: #2d3e50;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+a {
+    color: #0091ae;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+a:hover {
+    text-decoration: underline;
 }
 
-.card__email {
-    font-size: 1rem;
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
-label, input {
-    margin-top: 5px;
+th {
+    background-color: #f5f8fa;
+    color: #33475b;
+}
+
+form {
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
     display: block;
-    font-size: inherit;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"] {
-    padding: .25rem;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-input[type="submit"] {
-    background-color: lightgrey;
+button {
+    background-color: #ff7a59;
+    color: white;
     border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e66b4d;
 }
