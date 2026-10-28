@@ -23,13 +23,11 @@ const API_URL = 'https://api-eu1.hubapi.com/crm/v3/objects/2-255566817';
 
 // 1. Homepage (get the list of plants)
 app.get('/', async (req, res) => {
-    console.log("!!! REACHED HOMEPAGE ROUTE !!!");
     try {
         const response = await axios.get(`${API_URL}?properties=name,species,sunlight`, {
             headers: { Authorization: `Bearer ${TOKEN}` },
             timeout: 5000 // Wait max 5 seconds for HubSpot to respond
         });
-        console.log("!!! SUCCESSFULLY GOT DATA FROM HUBSPOT !!!");
         res.render('homepage', { 
             title: 'Plants List', 
             plants: response.data.results 
